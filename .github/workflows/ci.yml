@@ -12,5 +12,5 @@ jobs:
 
       - name: Validate
         run: |
-          brew tap .
+          brew tap sudosubin/check-jsonschema .
           brew install check-jsonschema
