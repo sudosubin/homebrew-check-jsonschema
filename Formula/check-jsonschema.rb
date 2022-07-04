@@ -70,6 +70,6 @@ class CheckJsonschema < Formula
   end
 
   test do
-    system bin/"check-jsonschema", "--help"
+    system bin/"check-jsonschema", "--version"
   end
 end
