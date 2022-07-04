@@ -8,6 +8,13 @@ class CheckJsonschema < Formula
   license "Apache-2.0"
   head "https://github.com/python-jsonschema/check-jsonschema.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/sudosubin/homebrew-check-jsonschema/releases/download/check-jsonschema-0.16.2"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, big_sur:      "9a1da273586e85e86053feb1dd40b37470fcdf431d64c29dbd837dc3a2df2d95"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "82b61eba6d469539e63f407638362197fdc606d517341f2c1e70b57be7625841"
+  end
+
   depends_on "python@3.10"
 
   resource "identify" do
